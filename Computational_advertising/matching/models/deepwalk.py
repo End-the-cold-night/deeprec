@@ -6,7 +6,7 @@ import os
 # path 
 import sys
 sys.path.append(os.path.abspath('.')[0:len(os.path.abspath('.'))-6] + "utilize")
-from walker import Walker
+from ..utilize.walker import Walker
 from gensim.models import Word2Vec
 import pandas as pd
 

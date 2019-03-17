@@ -5,7 +5,7 @@ import os
 import sys
 sys.path.append(os.path.abspath('.')[0:len(os.path.abspath('.'))-4] + "models")
 
-from deepwalk import DeepWalk
+from ..models.deepwalk import DeepWalk
 
 
 from sklearn.linear_model import LogisticRegression

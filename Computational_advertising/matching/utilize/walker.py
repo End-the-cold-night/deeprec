@@ -8,7 +8,7 @@ import math
 import random
 from joblib import Parallel, delayed
 from tqdm import trange
-from utilze import alias_sample, create_alias_table, batch_num
+from .U import alias_sample, create_alias_table, batch_num
 
 
 class Walker:

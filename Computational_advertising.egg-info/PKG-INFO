@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Computational-advertising
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/End-the-cold-night/Computational-advertising
+Author: Kai Zhang
+Author-email: kaizhangee@gmail.com
+License: MIT license
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Provides-Extra: tf
+Provides-Extra: tf_gpu
