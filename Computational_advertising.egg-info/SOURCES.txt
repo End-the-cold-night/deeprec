@@ -9,6 +9,7 @@ Computational_advertising.egg-info/top_level.txt
 Computational_advertising/matching/__init__.py
 Computational_advertising/matching/models/__init__.py
 Computational_advertising/matching/models/deepwalk.py
+Computational_advertising/matching/models/line.py
 Computational_advertising/matching/models/node2vec.py
 Computational_advertising/matching/test/__init__.py
 Computational_advertising/matching/test/test.py

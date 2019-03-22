@@ -15,7 +15,7 @@ from ..utilize.walker import Walker
 from ..utilize.U import create_alias_table, alias_sample
 from gensim.models import Word2Vec
 import pandas as pd
-
+import pdb
 class AliasSampling:
 
     # Reference: https://en.wikipedia.org/wiki/Alias_method
@@ -57,13 +57,19 @@ class DBLPDataLoader:
         self.num_of_edges = self.g.number_of_edges()
         self.edges_raw = self.g.edges(data=True)
         self.nodes_raw = self.g.nodes(data=True)
-
-        self.edge_distribution = np.array([attr['weight'] for _, _, attr in self.edges_raw], dtype=np.float32)
+        try:
+            self.edge_distribution = np.array([attr['weight'] for _, _, attr in self.edges_raw], dtype=np.float32)
+        except:
+            self.edge_distribution = np.array([1]*self.num_of_edges, dtype=np.float32)
         self.edge_distribution /= np.sum(self.edge_distribution)
         self.edge_sampling = AliasSampling(prob=self.edge_distribution)
 
-        self.node_negative_distribution = np.power(
-            np.array([self.g.degree(node, weight='weight') for node, _ in self.nodes_raw], dtype=np.float32), 0.75)
+        try:
+            tempnode = np.array([self.g.degree(node, weight='weight') for node, _ in self.nodes_raw], dtype=np.float32)
+        except:
+            tempnode = np.array([1]*self.num_of_nodes,dtype=np.float32)
+
+        self.node_negative_distribution = np.power(tempnode, 0.75)
         self.node_negative_distribution /= np.sum(self.node_negative_distribution)
         self.node_sampling = AliasSampling(prob=self.node_negative_distribution)
 
@@ -114,7 +120,7 @@ class DBLPDataLoader:
 
 
 class LINE:
-    def __init__(self, graph, embedding_size=8, negative_ratio=5, order='second',):
+    def __init__(self, graph, embedding_size=8, negative_ratio=5, learning_rate = 0.025, num_batches = 2000, order='second-order'):
         """
 
         :param graph:
@@ -126,8 +132,9 @@ class LINE:
         self.embedding_dim = embedding_size
         self.K = negative_ratio
         self.proximity = order
-        self.learning_rate = 0.025
-        self.num_batches = 300000
+        self.learning_rate = learning_rate
+        self.num_batches = num_batches
+        self.final_embed = []
 
 
     def line_model(self, batch_size, num_of_nodes):
@@ -140,13 +147,13 @@ class LINE:
         if self.proximity == 'first-order':
             self.u_j_embedding = tf.matmul(tf.one_hot(self.u_j, depth=num_of_nodes), self.embedding)
         elif self.proximity == 'second-order':
-            self.context_embedding = tf.get_variable('context_embedding', [num_of_nodesself.K, self.embedding_dim],
+            self.context_embedding = tf.get_variable('context_embedding', [num_of_nodes, self.embedding_dim],
                                                      initializer=tf.random_uniform_initializer(minval=-1., maxval=1.))
-            self.u_j_embedding = tf.matmul(tf.one_hot(self.u_j, depth=num_of_nodesself.K), self.context_embedding)
+            self.u_j_embedding = tf.matmul(tf.one_hot(self.u_j, depth=num_of_nodes), self.context_embedding)
 
         self.inner_product = tf.reduce_sum(self.u_i_embedding * self.u_j_embedding, axis=1)
         self.loss = -tf.reduce_mean(tf.log_sigmoid(self.label * self.inner_product))
-        self.learning_rate = tf.placeholder(name='learning_rate', dtype=tf.float32)
+        # self.learning_rate = tf.placeholder(name='learning_rate', dtype=tf.float32)
         # self.optimizer = tf.train.GradientDescentOptimizer(learning_rate=self.learning_rate)
         self.optimizer = tf.train.RMSPropOptimizer(learning_rate=self.learning_rate)
         self.train_op = self.optimizer.minimize(self.loss)
@@ -157,35 +164,39 @@ class LINE:
         data_loader = DBLPDataLoader(self.g)
         suffix = self.proximity
         num_of_nodes = data_loader.num_of_nodes
-        model = line_model(self, batch_size, num_of_nodes)
+        #pdb.set_trace()
+        model = self.line_model(batch_size, num_of_nodes)
         with tf.Session() as sess:
             tf.global_variables_initializer().run()
-            initial_embedding = sess.run(model.embedding)
-            learning_rate = self.learning_rate
+            initial_embedding = sess.run(self.embedding)
             sampling_time, training_time = 0, 0
             for b in range(self.num_batches):
                 t1 = time.time()
                 u_i, u_j, label = data_loader.fetch_batch(batch_size=batch_size, K=self.K)
-                feed_dict = {model.u_i: u_i, model.u_j: u_j, model.label: label, model.learning_rate: learning_rate}
+                feed_dict = {self.u_i: u_i, self.u_j: u_j, self.label: label}
                 t2 = time.time()
                 sampling_time += t2 - t1
                 if b % 100 != 0:
-                    sess.run(model.train_op, feed_dict=feed_dict)
+                    sess.run(self.train_op, feed_dict=feed_dict)
                     training_time += time.time() - t2
-                    if learning_rate > self.learning_rate * 0.0001:
-                        learning_rate = self.learning_rate * (1 - b / self.num_batches)
+                    if self.learning_rate > self.learning_rate * 0.0001:
+                        self.learning_rate = self.learning_rate * (1 - b / self.num_batches)
                     else:
-                        learning_rate = self.learning_rate * 0.0001
+                        self.learning_rate = self.learning_rate * 0.0001
                 else:
-                    loss = sess.run(model.loss, feed_dict=feed_dict)
+                    loss = sess.run(self.loss, feed_dict=feed_dict)
                     print('%d\t%f\t%0.2f\t%0.2f\t%s' % (b, loss, sampling_time, training_time,
                                                         time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
                     sampling_time, training_time = 0, 0
                 if b % 1000 == 0 or b == (self.num_batches - 1):
-                    embedding = sess.run(model.embedding)
+                    embedding = sess.run(self.embedding)
                     normalized_embedding = embedding / np.linalg.norm(embedding, axis=1, keepdims=True)
                     #pickle.dump(data_loader.embedding_mapping(normalized_embedding),
                     #            open('data/embedding_%s.pkl' % suffix, 'wb'))
-        
+            self.final_embed = sess.run(self.embedding)
+                    
+    def get_embeddings(self):
+        return self.final_embed
+
 
 
