@@ -16,3 +16,12 @@ Computational_advertising/matching/test/test.py
 Computational_advertising/matching/utilize/U.py
 Computational_advertising/matching/utilize/__init__.py
 Computational_advertising/matching/utilize/walker.py
+Computational_advertising/ranking/__init__.py
+Computational_advertising/ranking/models/__init__.py
+Computational_advertising/ranking/models/afm.py
+Computational_advertising/ranking/models/dcn.py
+Computational_advertising/ranking/models/deepfm.py
+Computational_advertising/ranking/models/fm.py
+Computational_advertising/ranking/models/pnn.py
+Computational_advertising/ranking/utilize/U.py
+Computational_advertising/ranking/utilize/__init__.py
