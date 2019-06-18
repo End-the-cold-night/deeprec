@@ -13,7 +13,7 @@ def dice(_x,axis=-1,epsilon=0.0000001,name=''):
     del reduction_axes[axis] # [0]
 
     broadcast_shape = [1] * len(input_shape)  #[1,1]
-    broadcast_shape[axis] = input_shape[axis] # [1, hidden_unit_size]
+    broadcast_shape[axis] = input_shape[axis] # [1, hidden_unit_size], hidden_unit_size=flied_size * embedding_size
 
     # case: train mode (uses stats of the current batch)
     mean = tf.reduce_mean(_x, axis=reduction_axes) # [1 * hidden_unit_size]
@@ -34,7 +34,6 @@ def parametric_relu(_x):
                              dtype=tf.float32)
     pos = tf.nn.relu(_x)
     neg = alphas * (_x - abs(_x)) * 0.5
-
     return pos + neg
 
 

@@ -17,7 +17,7 @@ REQUIRED_PACKAGES = [
 
 setuptools.setup(
 
-    name="Computational_advertising",
+    name="deeprec",
 
     version="0.0.0",
 
