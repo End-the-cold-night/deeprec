@@ -1,0 +1,15 @@
+存储整理好的数据
+
+每个特定数据集下需要以下几个文件。
+
+data.pkl:
+    1. train_set, a list of all feature, [spf1, spf2, spf3,..., [sef1_0, sef1_1, ...], [sef2_0, sef2_1, ...], def1, def2,..., taf, label]
+    2. test_set, a list of all feature, [spf1, spf2, spf3,..., [sef1_0, sef1_1, ...], [sef2_0, sef2_1, ...], def1, def2,..., taf, label]
+    3. feature_config_dict, a dict, 记录每个sprase feature和sequence feature的长度，i.e.,
+       {userid_sprase: *, ....., behavir_sequence: *, ..., score_dense,...}
+
+    A.train_set和test_set中， spf表示sprase feature, sef表示序列数据， def表示dense feature, label表示标签
+    B.feature_config_dict需要名字后面带上sprase、sequence和dense的后缀，方便后续处理
+    C.实际上通常sequence feature是sprase的子集，注意前缀一致
+    D.Notice：1，2和3中的顺序不能打乱！！！！
+    E.需要具有三种，对于sequence特征缺失至少用[0]填充，对于dense用0填充，名字_dense

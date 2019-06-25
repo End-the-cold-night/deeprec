@@ -3,90 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db145330-85c8-40ac-9035-8721e680e381" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/joint_optimization/ESMM.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/joint_optimization/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/.idea/matching.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/flight/brazil-airports.edgelist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/flight/europe-airports.edgelist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/flight/labels-brazil-airports.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/flight/labels-europe-airports.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/flight/labels-usa-airports.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/flight/usa-airports.edgelist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/wiki/Wiki_category.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/wiki/Wiki_edgelist.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/data/wiki/wiki_labels.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/models/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/models/deepwalk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/models/line.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/models/node2vec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/test/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/test/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/test/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/utilize/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/utilize/U.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/utilize/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/matching/utilize/walker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/Computational_advertising.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/Computational_advertising.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/Computational_advertising.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/Computational_advertising.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/Computational_advertising.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/afm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/cin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/dcn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/deepfm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/din.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/dist/Computational_advertising-0.0.0-py3.6.egg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/fm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/models/pnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/test/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/utilize/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/utilize/U.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/ranking/utilize/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/strategy/models/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/strategy/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/strategy/test/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/strategy/utilize/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Computational_advertising/test/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/models/deepwalk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/models/line.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/models/node2vec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/test/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/test/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/utilize/U.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/utilize/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/utilize/utilize.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/utilize/utilze.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/matching/utilize/walker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/models/afm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/models/dcn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/models/deepfm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/models/fm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/models/pnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/utilize/U.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/Computational_advertising/ranking/utilize/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Computational_advertising-0.0.0-py3.6.egg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deeprec/ranking/models/fm.py" beforeDir="false" afterPath="$PROJECT_DIR$/deeprec/ranking/models/fm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,22 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deeprec/__init__.py">
+      <file leaf-file-name="deepfm.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deeprec/ranking/models/deepfm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="280">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="33" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#255#278#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -127,12 +36,14 @@
       <list>
         <option value="$PROJECT_DIR$/Computational_advertising/matching/utilize/U.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/deeprec/ranking/models/fm.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="838" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -151,6 +62,33 @@
               <item name="deeprec" type="b2602c69:ProjectViewProjectNode" />
               <item name="deeprec" type="462c0819:PsiDirectoryNode" />
               <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deeprec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+              <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+              <item name="ranking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deeprec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+              <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+              <item name="ranking" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deeprec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+              <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+              <item name="ranking" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deeprec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+              <item name="deeprec" type="462c0819:PsiDirectoryNode" />
+              <item name="ranking" type="462c0819:PsiDirectoryNode" />
+              <item name="utilize" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,8 +126,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="838" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -215,10 +152,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/deeprec/ranking/models/deepfm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#255#278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Computational_advertising/matching/utilize/walker.py" />
     <entry file="file://$PROJECT_DIR$/Computational_advertising/matching/data/wiki/Wiki_category.txt" />
     <entry file="file://$PROJECT_DIR$/Computational_advertising/matching/data/wiki/wiki_labels.txt" />
@@ -226,19 +173,33 @@
     <entry file="file://$PROJECT_DIR$/Computational_advertising/matching/utilize/U.py" />
     <entry file="file://$PROJECT_DIR$/Computational_advertising/matching/data/wiki/Wiki_edgelist.txt" />
     <entry file="file://$PROJECT_DIR$/Computational_advertising/matching/test/test.py" />
-    <entry file="file://$PROJECT_DIR$/deeprec/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeprec/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeprec/ranking/models/din.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeprec/ranking/models/fm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deeprec/ranking/models/deepfm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#255#278#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
