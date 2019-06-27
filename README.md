@@ -14,13 +14,13 @@ Support now：
 
     Fm: https://mp.weixin.qq.com/s/UQui8f2ZGLyGfa8VnnpmCQ
   
-    Ffm:https://mp.weixin.qq.com/s/UQui8f2ZGLyGfa8VnnpmCQ
+    Ffm: https://mp.weixin.qq.com/s/UQui8f2ZGLyGfa8VnnpmCQ
   
     Deep-fm: https://mp.weixin.qq.com/s/8b65T2qe4D1-UHEAnQ2zTg
   
-    Dcn:https://mp.weixin.qq.com/s/8b65T2qe4D1-UHEAnQ2zTg
+    Dcn: https://mp.weixin.qq.com/s/8b65T2qe4D1-UHEAnQ2zTg
   
-    Afm:https://mp.weixin.qq.com/s/UQui8f2ZGLyGfa8VnnpmCQ
+    Afm: https://mp.weixin.qq.com/s/UQui8f2ZGLyGfa8VnnpmCQ
   
     Cin(xdeepfm)
   
