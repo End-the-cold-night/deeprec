@@ -12,15 +12,15 @@ Support now：
 
 2.Ranking
 
-    Fm
+    Fm: https://mp.weixin.qq.com/s/UQui8f2ZGLyGfa8VnnpmCQ
   
-    Ffm
+    Ffm:https://mp.weixin.qq.com/s/UQui8f2ZGLyGfa8VnnpmCQ
   
-    Deep-fm
+    Deep-fm: https://mp.weixin.qq.com/s/8b65T2qe4D1-UHEAnQ2zTg
   
-    Dcn
+    Dcn:https://mp.weixin.qq.com/s/8b65T2qe4D1-UHEAnQ2zTg
   
-    Afm
+    Afm:https://mp.weixin.qq.com/s/UQui8f2ZGLyGfa8VnnpmCQ
   
     Cin(xdeepfm)
   
