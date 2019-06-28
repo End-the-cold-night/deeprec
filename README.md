@@ -28,7 +28,9 @@ Support now：
     
     Autoint
     
-    FGCNN
+    CCPM: https://mp.weixin.qq.com/s/zyJZ_VjSeZ7E3rLYmKlgpg
+    
+    FGCNN: https://mp.weixin.qq.com/s/zyJZ_VjSeZ7E3rLYmKlgpg
     
 
 3.Strategy
